@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Victoria's Secret - Lencería y Belleza</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      padding-top: 80px;
+      background-color: #fff;
+    }
+
+    .navbar {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #000 !important;
+    }
+
+    .navbar-nav .nav-link {
+      font-weight: 500;
+      color: #333 !important;
+      margin-right: 1rem;
+      text-transform: uppercase;
+    }
+
+    .nav-link.active {
+      color: #e91e63 !important;
+    }
+
+    .btn-signin {
+      background-color: transparent;
+      border: 1px solid #e91e63;
+      color: #e91e63;
+      border-radius: 50px;
+      padding: 6px 16px;
+    }
+
+    .btn-signin:hover {
+      background-color: #e91e63;
+      color: #fff;
+    }
+
+    h2 {
+      font-weight: 700;
+    }
+
+    .lead, p {
+      text-align: justify;
+    }
+
+    .btn-primary {
+      background-color: #e91e63;
+      border: none;
+      border-radius: 30px;
+      padding: 10px 25px;
+    }
+
+    .btn-primary:hover {
+      background-color: #d81b60;
+    }
+
+    .btn-outline-light:hover {
+      background-color: #fff;
+      color: #e91e63;
+    }
+
+    footer {
+      background-color: #000;
+      color: #fff;
+    }
+
+    .card img {
+      border-radius: 10px 10px 0 0;
+    }
+
+    .card-body {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR FIJA -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Victoria's Secret</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#lenceria">Lencería</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pijamas">Pijamas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#productos">Belleza</a></li>
+          <li class="nav-item"><a class="nav-link" href="#novedades">Novedades</a></li>
+        </ul>
+        <a class="btn btn-signin" href="#">Sign In</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SECCIÓN INICIO -->
+  <section id="inicio" class="py-5 bg-dark text-white">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h1 class="display-4">Bienvenido a Victoria's Secret</h1>
+          <p class="lead">Diseñamos lencería y productos de belleza femenina de alta calidad.</p>
+          <a href="#lenceria" class="btn btn-outline-light">Explora Nuestros Productos</a>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="images/logo.png" alt="Logo" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN LENCERÍA -->
+  <section id="lenceria" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Colecciones de Lencería</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="images/camison.png" class="card-img-top" alt="Lencería 1">
+            <div class="card-body">
+              <h5 class="card-title">Babydoll de Encaje</h5>
+              <p class="card-text">Una pieza elegante y sensual.</p>
+              <a href="#" class="btn btn-primary">Ver Más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="images/pijama2.png" class="card-img-top" alt="Lencería 2">
+            <div class="card-body">
+              <h5 class="card-title">Conjunto de Pijama Largo</h5>
+              <p class="card-text">Comodidad y estilo para todas las ocasiones.</p>
+              <a href="#" class="btn btn-primary">Ver Más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="images/pijama3.png" class="card-img-top" alt="Lencería 3">
+            <div class="card-body">
+              <h5 class="card-title">Conjunto de Pijama Corto</h5>
+              <p class="card-text">Práctico y versátil para el hogar.</p>
+              <a href="#" class="btn btn-primary">Ver Más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN PRODUCTOS -->
+  <section id="productos" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Productos de Belleza</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="images/belleza3.png" class="card-img-top" alt="Perfume">
+            <div class="card-body">
+              <h5 class="card-title">Perfume</h5>
+              <p class="card-text">Elegancia en cada aroma.</p>
+              <a href="#" class="btn btn-primary">Ver Más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="images/belleza2.png" class="card-img-top" alt="Lip Oil">
+            <div class="card-body">
+              <h5 class="card-title">Lip Oil</h5>
+              <p class="card-text">Nutrición y brillo para tus labios.</p>
+              <a href="#" class="btn btn-primary">Ver Más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="images/belleza1.png" class="card-img-top" alt="Loción">
+            <div class="card-body">
+              <h5 class="card-title">Loción Corporal</h5>
+              <p class="card-text">Hidratación profunda para tu piel.</p>
+              <a href="#" class="btn btn-primary">Ver Más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOVEDADES -->
+  <section id="novedades" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">¡Descubre lo Nuevo!</h2>
+      <p class="lead text-center">Esta temporada traemos colecciones irresistibles con los estilos más deseados.</p>
+      <p class="text-center">Explora nuestros nuevos diseños con encajes delicados, colores vibrantes y tejidos cómodos pensados para hacerte sentir espectacular.</p>
+      <div class="text-center">
+        <a href="#" class="btn btn-primary">Renueva tu Estilo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p>© 2023 Victoria's Secret. Todos los derechos reservados.</p>
+        </div>
+        <div class="col-md-6 text-end">
+          <a href="#" class="text-white me-2">Términos de Uso</a>
+          <a href="#" class="text-white">Política de Privacidad</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
